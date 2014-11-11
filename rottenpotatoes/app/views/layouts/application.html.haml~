@@ -2,6 +2,7 @@
 %html
   %head
     %title Rotten Potatoes!
+    = render :partial => 'sessions/login'
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
@@ -15,4 +16,3 @@
         #warning.message= flash[:warning]
 
       = yield
-      = render :partial => 'sessions/login'
